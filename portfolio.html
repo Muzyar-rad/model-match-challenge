@@ -53,11 +53,19 @@
         flex-direction: column;
         margin-left: 10px;
       }
-      p.street {
-        margin-bottom: -15px;
-      }
+      p.street,
       p.city {
         margin-bottom: -15px;
+      }
+      div.github,
+      div.linkedin {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+      }
+      p.gitUrl,
+      p.linkedinUrl {
+        margin-left: 10px;
       }
       p.bio {
       }
@@ -78,9 +86,14 @@
             <p class="zipcode">92606</p>
           </div>
         </div>
-        <i class="fa fa-github" aria-hidden="true"></i>
-
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <div class="github">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <p class="gitUrl">https://github.com/Muzyar-rad</p>
+        </div>
+        <div class="linkedin">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <p class="linkedinUrl">https://www.linkedin.com/in/muzyar-rad/</p>
+        </div>
       </div>
       <div class="column center">
         <p class="bio">I have been a software engineer for 2 years</p>
