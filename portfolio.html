@@ -12,13 +12,19 @@
         display: flex;
         background-color: #000051;
         color: #80d8ff;
+        border: 4px solid;
         border-radius: 6px;
         max-width: 100%;
         height: 400px;
       }
-      div.column {
+      div.column1 {
         flex: 50%;
         padding: 20px;
+      }
+      div.column2 {
+        flex: 50%;
+        padding: 20px;
+        border-left: 4px solid;
       }
       div.flex {
         display: flex;
@@ -73,7 +79,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="column flex">
+      <div class="column1 flex">
         <div class="nameTitle">
           <p class="name">Muzyar Rad</p>
           <p class="title">Software Engineer</p>
@@ -95,8 +101,13 @@
           <p class="linkedinUrl">https://www.linkedin.com/in/muzyar-rad/</p>
         </div>
       </div>
-      <div class="column center">
-        <p class="bio">I have been a software engineer for 2 years</p>
+      <div class="column2 center">
+        <p class="bio">
+          I am Muzyar (Mazy) Rad. Full-stack web developer with BS in computer
+          software engineering who is passionate about coding, learning and
+          working with new technology and tools, solving problems and overcoming
+          challenges.
+        </p>
       </div>
     </div>
   </body>
