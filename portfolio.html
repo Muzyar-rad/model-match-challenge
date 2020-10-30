@@ -2,20 +2,42 @@
 <html>
   <head>
     <meta http-equiv="refresh" content="5" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
     <title>Software Engineer Portfolio</title>
     <style>
       div.container {
+        display: flex;
         background-color: #000051;
         color: #80d8ff;
         border-radius: 6px;
         max-width: 100%;
         height: 400px;
       }
+      div.column {
+        flex: 50%;
+      }
+
+      p.name {
+      }
+      p.bio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <p class="name"></p>
+      <div class="column">
+        <p class="name">Muzyar Rad</p>
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </div>
+      <div class="column">
+        <p class="bio">I have been a software engineer for 2 years</p>
+      </div>
     </div>
   </body>
 </html>
