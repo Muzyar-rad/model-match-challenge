@@ -23,6 +23,7 @@ inquirer
       linkedin,
       github,
     } = answers;
+
     const htmlContent = `<!DOCTYPE html>
     <html>
       <head>
@@ -134,7 +135,7 @@ inquirer
     
     `;
 
-    fs.appendFile("result.html", htmlContent, function (err) {
+    fs.appendFile("result.html", htmlContent, (err) => {
       if (err) throw err;
       console.log("Your portfolio is ready! please refer to result.html file.");
     });
