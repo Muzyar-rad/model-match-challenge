@@ -26,7 +26,6 @@ inquirer
     const htmlContent = `<!DOCTYPE html>
     <html>
       <head>
-        <meta http-equiv="refresh" content="3" />
         <link
           rel="stylesheet"
           href="./font-awesome-4.7.0/css/font-awesome.min.css"
@@ -98,8 +97,6 @@ inquirer
           p.linkedinUrl {
             margin-left: 10px;
           }
-          p.bio {
-          }
         </style>
       </head>
       <body>
@@ -128,16 +125,17 @@ inquirer
           </div>
           <div class="column2 center">
             <p class="bio">
-             ${bio}
+              ${bio}
             </p>
           </div>
         </div>
       </body>
     </html>
+    
     `;
 
-    fs.appendFile("test1.html", htmlContent, function (err) {
+    fs.appendFile("result.html", htmlContent, function (err) {
       if (err) throw err;
-      console.log("saved");
+      console.log("Your portfolio is ready! please refer to result.html file.");
     });
   });
