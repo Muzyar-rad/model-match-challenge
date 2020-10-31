@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const test = async () => {
+const result = async () => {
   const getUserInfo = await inquirer.prompt([
     { name: "name", message: "What is your name? ", default: "N/A" },
     { name: "street", message: "What is your street address?", default: "N/A" },
@@ -141,4 +141,4 @@ const test = async () => {
   });
 };
 
-test();
+result();
