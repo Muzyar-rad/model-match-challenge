@@ -1,29 +1,4 @@
-const inquirer = require("inquirer");
-const fs = require("fs");
-
-inquirer
-  .prompt([
-    { name: "name", message: "What is your name? ", default: "N/A" },
-    { name: "street", message: "What is your street address?", default: "N/A" },
-    { name: "city", message: "What city do you live at?", default: "N/A" },
-    { name: "state", message: "What state?", default: "N/A" },
-    { name: "zipcode", message: "What is your zipcode?", default: "N/A" },
-    { name: "bio", message: "Tell me about yourself:", default: "N/A" },
-    { name: "linkedin", message: "Enter your Linkedin URL:", default: "N/A" },
-    { name: "github", message: "Enter your GitHub URL:", default: "N/A" },
-  ])
-  .then((answers) => {
-    const {
-      name,
-      street,
-      city,
-      state,
-      zipcode,
-      bio,
-      linkedin,
-      github,
-    } = answers;
-    const htmlContent = `<!DOCTYPE html>
+<!DOCTYPE html>
     <html>
       <head>
         <meta http-equiv="refresh" content="3" />
@@ -106,38 +81,32 @@ inquirer
         <div class="container">
           <div class="column1 flex">
             <div class="nameTitle">
-              <p class="name">${name}</p>
+              <p class="name">John Doe</p>
               <p class="title">Software Engineer</p>
             </div>
             <div class="location">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <div class="address">
-                <p class="street">${street}</p>
-                <p class="city">${city}, ${state}</p>
-                <p class="zipcode">${zipcode}</p>
+                <p class="street">381 San Leon</p>
+                <p class="city">Irvine, CA</p>
+                <p class="zipcode">929612</p>
               </div>
             </div>
             <div class="github">
               <i class="fa fa-github" aria-hidden="true"></i>
-              <p class="gitUrl">${github}</p>
+              <p class="gitUrl">http://github.com</p>
             </div>
             <div class="linkedin">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
-              <p class="linkedinUrl">${linkedin}</p>
+              <p class="linkedinUrl">http://linkedin.com</p>
             </div>
           </div>
           <div class="column2 center">
             <p class="bio">
-             ${bio}
+             I am a great person everyone loves me!
             </p>
           </div>
         </div>
       </body>
     </html>
-    `;
-
-    fs.appendFile("test1.html", htmlContent, function (err) {
-      if (err) throw err;
-      console.log("saved");
-    });
-  });
+    
