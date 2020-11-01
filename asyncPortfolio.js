@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const result = async () => {
+module.exports = async () => {
   try {
     const getUserInfo = await inquirer.prompt([
       { name: "name", message: "What is your name? ", default: "N/A" },
@@ -147,5 +147,3 @@ const result = async () => {
     console.log(ex);
   }
 };
-
-result();
