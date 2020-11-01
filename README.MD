@@ -33,6 +33,10 @@ Coding assessment for Model Match Company coded in Node.js, HTML5 and styled wit
 
 - `./result.html`
 
+## Bonus
+
+- Please refer to the asyncPortfolio.js and index.js files to see the async/await, try/catch implementation for asynchronous code
+
 ## Colaborator
 
 Muzyar Rad aka. Mazy
